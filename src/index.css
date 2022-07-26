@@ -3,4 +3,9 @@ body {
     background-color: white;
 }
 
-header {background-color: yellow;}
+header {background-color: yellow; padding: 20px 0}
+main {background-color:lightgray; min-height: 400px;}
+footer {
+    background-color: teal;
+}
+.cart-icon {width:30px; float:right}

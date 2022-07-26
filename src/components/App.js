@@ -1,15 +1,25 @@
-import NavBar from "./NavBar";
+import NavBar from "./Header";
+import Footer from "./Footer";
+import ItemListContainer from "./ItemListContainer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-function App() {
+const App = () => {
   return (
     <>
     <NavBar />
     <main>
-      <h2>Home</h2>
+      <Container>
+        <Row>
+          <Col>
+             <ItemListContainer nombre="Manuel"/>
+          </Col>
+        </Row>
+      </Container>
     </main>
-    <footer>
-      <p>Footer</p>
-    </footer>
+    <Footer/>
     </>
   );
 }
